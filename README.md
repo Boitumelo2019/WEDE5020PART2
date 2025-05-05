@@ -40,3 +40,8 @@ Stay updated with our latest events and tips by following us on our social media
 Thank you for considering FAB DECORATIONS for your event planning needs. We looking forward to making your next event unforgettable!
 
 
+Test and Iterate
+
+Devices used to test and iterate
+-desktop/laptop
+
