@@ -1,3 +1,104 @@
+/*style for popup welcome message or text*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #FF5F6D 0%, #FFC371);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 95, 109, 0.75);
+    backdrop-filter: saturate(180%) blur(8px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Modal container */
+.modal {
+    background: white;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 90%;
+    padding: 32px 24px;
+    box-shadow: 0 12px 32px rgba(255, 95, 109, 0.4);
+    text-align: center;
+    position: relative;
+    animation: slideDown 0.4s ease forwards;
+}
+
+.modal h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.modal p {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+    color: #555;
+    line-height: 1.5;
+}
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff5f6d;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: #d43746;
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
 /* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
