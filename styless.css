@@ -1,3 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(231, 29, 221);
+    background-image: none;
+    color:rgb(243, 240, 242)
+}
+
+/*Header*/
+
+header {
+    background-color: rgba(109, 30, 98, 0.425);
+    background-image: none;
+    color: antiquewhite;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*Navigations*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Headings*/
+
+h1, h2 {
+    color: blanchedalmond;
+}
+
+/*Hero Styles*/
+
+#hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*Gallery Styles*/
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(178, 27, 238);
+    color: beige;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles*/
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(226, 43, 211);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(212, 17, 203);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input{container-type: "text";}
+form input{container-type: "email";}
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Buttons Styles*/
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
 @import url('https://fonts.gooleapis.com/css?family=Jodefin+Sans&display=swap');
 
 *{
@@ -5,7 +142,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: Josefin Arial, Helvetica, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -16,8 +153,7 @@ body {
     position:absolute;
     top: 50%;
     left: 50%;
-    right: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-30%, -30%);
     max-width: 350px;
     width:100%;
     background: #fff;
@@ -55,7 +191,7 @@ body {
     margin-top: 15px;
     padding: 10px;
     width: 100%;
-    background-color: #b540d6;
+    background-color: #ddd5df;
     color: #eb18bd;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -67,7 +203,7 @@ body {
 .wrapper #error_message{
     margin-bottom: 20px;
     padding: 0px;
-    background: #e42f35;
+    background: #e42f8c;
     text-align: center;
     font-size: 14px;
     transition: all 0.5s ease;
