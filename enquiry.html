@@ -29,6 +29,10 @@
 
 
 <!--division class-->
+<form id="myform" onsubmit="return validation()">
+<div class="wrapper">
+    <h2>contact us</h2>
+    <div id="error_message"></div>
     <div class="container">
         <h2>Event Planning Enquiry Form</h2
             <form action="/submit-enquiry" method="Post">
@@ -70,8 +74,12 @@
                     <label for="message">Additional Comments:</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
-                <input type="submit" value="Submit Enquiry">
+                
+                <div class="btn">
+                    <input type="submit">
+                </div>
             </form>
+</form>
 
     </div>
     
