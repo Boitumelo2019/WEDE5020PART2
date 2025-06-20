@@ -11,7 +11,7 @@ body {
 /*Header*/
 
 header {
-    background-color: rgba(109, 30, 98, 0.425);
+    background-color: rgba(148, 32, 159, 0.425);
     background-image: none;
     color: antiquewhite;
     padding: 20px 0;
@@ -79,7 +79,7 @@ h1, h2 {
 }
 
 .gallery-item img {
-    width: 100px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
 }
@@ -163,7 +163,7 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: rgba(161, 8, 128, 0.87);
+    background: rgba(233, 32, 189, 0.87);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.1);
@@ -226,7 +226,7 @@ iframe:hover{
 }
 
 body {
-    background: rgb(178, 27, 238);
+    background: rgb(217, 32, 180);
 }
 
 .wrapper{

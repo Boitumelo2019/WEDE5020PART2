@@ -41,8 +41,8 @@ function validation(){
     }
     
     // Validate the message input
-    if(message.length <= 140){
-        text = "Please Enter More Than 140 Characters";
+    if(message.length <= 100){
+        text = "Please Enter More Than 100 Characters";
         error_message.innerHTML = text;
         return false;
     }
